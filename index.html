@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Individual Practice</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Assignment 5. JavaScript Basics</h1>
+    <p>Student: Turlybek Nazgul &middot; Group:MT-2506</p>
+  </header>
+
+  <main>
+   
+    <section id="task6" aria-labelledby="task6-title">
+      <h2 id="task6-title">Task 6. A counter with click events</h2>
+      <p class="counter-value">Counter: <output id="counter-output">0</output></p>
+      <div class="btn-row">
+        <button type="button" id="counter-increase">Increase</button>
+        <button type="button" id="counter-decrease">Decrease</button>
+        <button type="button" id="counter-reset">Reset</button>
+      </div>
+    </section>
+
+    
+    <section id="task7" aria-labelledby="task7-title">
+      <h2 id="task7-title">Task 7. Live text preview</h2>
+      <label for="preview-input">Type or paste your text:</label>
+      <input type="text" id="preview-input" autocomplete="off">
+      <p class="preview-box" id="preview-text">Your text will appear here</p>
+      <p>Characters: <span id="char-count">0</span></p>
+      <button type="button" id="preview-clear">Clear</button>
+    </section>
+
+    
+    <section id="task8" aria-labelledby="task8-title">
+      <h2 id="task8-title">Task 8. Change an image with a select control</h2>
+      <label for="image-select">Choose a landscape:</label>
+      <select id="image-select">
+        <option value="mountains">Mountains</option>
+        <option value="ocean">Ocean</option>
+        <option value="forest">Forest</option>
+      </select>
+      <figure>
+        <img id="landscape-image" src="images/mountains.svg" alt="Snowy mountains under a blue sky" width="400">
+        <figcaption id="landscape-caption">Mountains</figcaption>
+      </figure>
+    </section>
+
+    
+    <section id="task9" aria-labelledby="task9-title">
+      <h2 id="task9-title">Task 9. Keyboard events</h2>
+      <form id="key-form">
+        <label for="key-input">Type here (Enter = show text, Escape = clear):</label>
+        <input type="text" id="key-input" autocomplete="off">
+      </form>
+      <p>Status: <span id="key-status">No key pressed yet</span></p>
+      <p>Result: <span id="key-result"></span></p>
+    </section>
+
+   
+    <section id="task10" aria-labelledby="task10-title">
+      <h2 id="task10-title">Task 10. Mouse and focus events</h2>
+      <div class="card-row">
+        <div class="hover-card" id="hover-card" tabindex="0">Hover over me or press Tab</div>
+        <p id="card-instruction">Move the mouse over the card or focus it with Tab.</p>
+      </div>
+      <ul class="explain">
+        <li><code>mouseenter</code> — adds the <code>highlight</code> class and changes the instruction (mouse).</li>
+        <li><code>mouseleave</code> — removes the class and restores the instruction (mouse).</li>
+        <li><code>focus</code> — same effect as mouseenter, for keyboard users (Tab).</li>
+        <li><code>blur</code> — same effect as mouseleave, when focus leaves the card.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
